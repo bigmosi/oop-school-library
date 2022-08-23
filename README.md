@@ -1,43 +1,72 @@
-# oop-school-library
-This project is a school library store that allow to the librarian to record what books are in the library and who borrows them but also the system can allow to add new students or teachers, to add a new book and to save records of who borrowed a given book and when
+# OOP School Library
 
-# Built With
-Major languages : Ruby
-Frameworks : none
-Technologies used : Git, Gitflows, Github, Rubocop and Rubygem
-# Getting Started
+Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow you to:
+
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
+
+And all of this will be built in a beautiful and well-organized way!
+
+
+## Built With
+
+- Ruby
+- Git
+- GitHub
+- VSCode
+- Rubocop
+
+## Getting Started
+
 To get a local copy up and running follow these simple example steps.
 
-# Prerequisites
-Have a computer and internet connection
-Have Ruby installed on your computer
-Hava a basic knowledge of Ruby and OOP concept
-Have visual-studio code or any other code editor installed on your computer.
-# Setup
-In order to get a copy of this project you need to download it from git@github.com:divinecharlotte/oop-school-library.git
-Extract the zipped file and open it in your code editor
-# Install
-Run the command bellow in your terminal to get all required files
-`bundle install`
-# Run tests
-you can run one of the followin command in your terminal
+### Prerequisites
 
-> Rubocop --color
+- A source-code editor (preferably Visual Studio Code)
 
+### Install
 
-> Rubocop -A
+- Ruby
+
+### Using it Locally
+
+- Clone the project
+
+git clone https://github.com/SaidRasinlic/oop-school-library.git
+
+cd Ruby-Enumerable
+
+- To Start the programs
+
+open terminal
+run the command $irb (interactive ruby shell)
+run the program functions
+
 
 ## Authors
 
-👤 **Charlotte Divine**
+👤 **Ranjit Luwang**
 
-- GitHub: [divinecharlotte](https://github.com/divinecharlotte)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/charlotte-divine-dusenge/)
+- GitHub: [@aboongm](https://github.com/aboongm)
+- Twitter: [@John_luang1](https://twitter.com/John_luang1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aboongm)
 
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
-Show your support
-Give a star if you like this project!
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse 
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

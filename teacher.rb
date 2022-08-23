@@ -3,8 +3,8 @@
 require_relative 'person'
 # Class Teacher inherits from Person
 class Teachear < Person
-  def initialize(specialization, age)
-    super(age, parent_permission: true)
+  def initialize(specialization, age, name = 'unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @specialization = specialization
   end
 
