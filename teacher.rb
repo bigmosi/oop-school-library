@@ -1,12 +1,14 @@
-require './person'
+# frozen_string_literal: true
 
-class Teacher < Person
-  def initialize(age, specialization, name = 'unknown', parent_permission: true)
-    super(age, name, parent_permission)
+require_relative 'person'
+# Class Teacher inherits from Person
+class Teachear < Person
+  def initialize(specialization, age)
+    super(age, parent_permission: true)
     @specialization = specialization
   end
 
-  def can_use_services
+  def can_use_services?
     true
   end
 end
