@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone the project
 
-git clone https://github.com/SaidRasinlic/oop-school-library.git
+git clone https://github.com/bigmosi/oop-school-library.git
 
 cd Ruby-Enumerable
 
@@ -46,11 +46,11 @@ run the program functions
 
 ## Authors
 
-👤 **Ranjit Luwang**
+👤 **Kinyera Amos**
 
-- GitHub: [@aboongm](https://github.com/aboongm)
-- Twitter: [@John_luang1](https://twitter.com/John_luang1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aboongm)
+- GitHub: [@kinyera-amos](https://github.com/bigmosi)
+- Twitter: [@kinyera_amos](https://twitter.com/kinyera_amos)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kinyera-amos)
 
 
 ## 🤝 Contributing
