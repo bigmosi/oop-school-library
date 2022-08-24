@@ -1,5 +1,8 @@
 require './nameable'
 
+# frozen_string_literal: true
+
+
 class TrimmerDecorator < Nameable
  def initialize(nameable = nameable.new)
    super()
