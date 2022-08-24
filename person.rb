@@ -1,6 +1,6 @@
-require './nameable'
-
 # frozen_string_literal: true
+
+require './nameable'
 
 # class called person
 class Person < Nameable

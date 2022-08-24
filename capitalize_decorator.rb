@@ -1,6 +1,6 @@
-require './nameable'
-
 # frozen_string_literal: true
+
+require './nameable'
 
 class CapitalizeDecorator < Nameable
   def initialize(nameable = nameable.new)

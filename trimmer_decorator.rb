@@ -1,7 +1,6 @@
-require './nameable'
-
 # frozen_string_literal: true
 
+require './nameable'
 
 class TrimmerDecorator < Nameable
  def initialize(nameable = nameable.new)
