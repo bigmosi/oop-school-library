@@ -1,12 +1,15 @@
+require './nameable'
+
 # frozen_string_literal: true
 
 # class called person
-class Person
+class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age
 
   # initializing the class person
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @name = name
     @age = age
@@ -18,6 +21,10 @@ class Person
     @age >= 18
   end
   private :of_age?
+
+  def correct_name
+    @name
+  end
 
   # Public method can_use_services?
   def can_use_services?
