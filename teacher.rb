@@ -1,13 +1,12 @@
-require_relative 'person'
+require './person'
 
-# Class Teacher inherits from Person
-class Teachear < Person
-  def initialize(specialization, age, name = 'unknown', parent_permission: true)
-    super(age, name, parent_permission)
+class Teacher < Person
+  def initialize(age, specialization, name = 'unknown')
+    super(age, name)
     @specialization = specialization
   end
 
-  def can_use_services?
+  def can_use_services
     true
   end
 end
