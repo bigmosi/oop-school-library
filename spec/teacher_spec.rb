@@ -1,25 +1,27 @@
-require_relative '../teacher'
+require './models/teacher'
+require './models/book'
 
-describe 'Teacher' do
-  before(:each) do
-    @teacher = Teacher.new(34, 'Physics', 'John')
+describe Teacher do
+  before :each do
+    @teacher1 = Teacher.new nil, nil, 23, 'Sam'
+    @teacher2 = Teacher.new nil, nil, 23, 'Dan'
+    @book = Book.new nil, 'Hello', 'World'
   end
 
-  it 'Should take the age, the specialization, and the name' do
-    expect(@teacher.age).to eq(34)
-    expect(@teacher.specialization).to eq('Physics')
-    expect(@teacher.name).to eq('John')
+  it 'should display teacher name' do
+    expect(@teacher1.name).to eq 'Sam'
+    expect(@teacher2.name).to eq 'Dan'
   end
 
-  it 'Should take the age' do
-    new_teacher = Teacher.new(28, 'Physics')
-    expect(new_teacher.age).to eq(28)
-    expect(new_teacher.specialization).to eq('Physics')
-    expect(new_teacher.name).to eq('unknown')
+  it 'should display teacher parent permission' do
+    expect(@teacher1.parent_permission).not_to eq false
+    expect(@teacher2.parent_permission).to eq true
   end
 
-  it 'Should return true if the age is greater than or equal to 18' do
-    new_teacher = Teacher.new(45, 'Physics', 'Bob')
-    expect(new_teacher.can_use_services).to eq(true)
+  it 'should displays book rented by Teacher' do
+    @teacher1.add_rental '2022/07/27', @book
+    @teacher1.rentals.each do |rental|
+      expect(rental.person.title).to eq 'Hello'
+    end
   end
 end

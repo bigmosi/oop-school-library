@@ -1,9 +1,8 @@
-require './start'
+require './app'
 
 def main
-  puts "Welcome to School Library App\n\n"
-  start = Start.new
-  start.run
+  @app = App.new
+  @app.run
 end
 
 main

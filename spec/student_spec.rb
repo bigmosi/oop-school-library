@@ -1,25 +1,12 @@
-require_relative '../student'
+require './models/student'
 
-describe 'Student' do
-  before(:each) do
-    @student = Student.new(34, 'John', parent_permission: true)
-  end
+describe Student do
+  context 'When providing student information' do
+    age = 15
+    student = Student.new(age, nil, 'Ian', true)
 
-  it 'Should take the age, the name, and the parent_permission' do
-    expect(@student.age).to eq(34)
-    expect(@student.name).to eq('John')
-    expect(@student.parent_permission).to eq(true)
-  end
-
-  it 'Should take the age' do
-    new_student = Student.new(28)
-    expect(new_student.age).to eq(28)
-    expect(new_student.name).to eq('Unknown')
-    expect(new_student.parent_permission).to eq(true)
-  end
-
-  it "Should return ¯\(ツ)/¯" do
-    new_student = Student.new(28, 'John', parent_permission: true)
-    expect(new_student.play_hooky).to eq("¯\(ツ)/¯")
+    it 'Creates a new student with an age of 20 and a name of Ian' do
+      expect(student).to be_an_instance_of Student
+    end
   end
 end
