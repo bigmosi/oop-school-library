@@ -2,6 +2,7 @@ require './student'
 require './teacher'
 require './rental'
 require './person'
+
 module LoadData
   def load_books
     if File.exist?('./data/books.json')
@@ -20,6 +21,7 @@ module LoadData
     if File.exist?('./data/persons.json')
       saved_persons = JSON.parse(File.read('./data/persons.json'))
       persons = []
+
       saved_persons.each do |person|
         persons << case person['json_class']
                    when 'Student'
@@ -28,6 +30,7 @@ module LoadData
                      Teacher.new(person['age'], person['specialization'], person['name'])
                    end
       end
+
       persons
     else
       File.write('./data/persons.json', [])
