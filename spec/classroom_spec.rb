@@ -1,5 +1,4 @@
 require './models/classroom'
-
 describe Classroom do
   before :each do
     @classroom = Classroom.new 'Grade12'
